@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --first-color:black;
+    --second-color: #f6f6f6;
+    --third-color: #22D4FD;
+    --hover-color: #272727;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--first-color);
+    color: var(--second-color);
+}
+
+.main_title{
+    color: var(--third-color)
+}
+
+.presentation {
+    padding: 4% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.presentation__content {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-right: 60px;
+}
+.presentation__content__title {
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+}
+
+.navigation {
+    padding: 2% 0 0 15%;
+}
+
+.navigation__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.navigation__menu__button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--third-color);
+    text-decoration: none;
+    opacity: 1;
+}
+
+.navigation__menu__button:hover {
+    opacity: 0.5; /* Começa semi-transparente */
+    transition: opacity 0.5s ease-in-out; /* Define a suavidade */
+}
+
+.presentation__content__paragraph {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.presentation__links {
+    align-items: center;
+    gap: 32px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.presentation__links__text {
+    font-family: "Krona One", sans-serif;
+    font-size: 24px;
+}
+
+.presentation__links__button{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--third-color);
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    width: 378px;
+    padding: 21.5px 0;
+    text-align: center;
+    text-decoration: none;
+    color: var(--second-color);
+    opacity: 1;
+}
+
+.presentation__links__button:hover {
+    background-color: var(--hover-color);
+    opacity: 0.5; /* Começa semi-transparente */
+    transition: opacity 0.6s ease-in-out; /* Define a suavidade */
+
+}
+
+.footer {
+    font-family: "Montserrat", sans-serif;
+    font-size: px;
+    padding: 24px;
+    text-align: center;
+    color: var(--first-color);
+    background-color: var(--third-color);
+
+}
